@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+@media only screen and (max-width: 900px) {
+  #personal {
+   margin-left:240px ;
+   display: inline-block;
+  }
+  #personal2 {
+   margin-left:230px ;
+   display: inline-block;
+  }
+}
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
+   
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+  <a class="btn text-light" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  
+    <span> <i style="color: rgb(56, 58, 59);" class="fa-solid fa-bars ms-2 fs-4"></i></span>
+    
+</a>
+        <a class="navbar-brand ms-3"  href="#">
+          <img  src="youtube-logo-png-transparent-image-5-removebg-preview.png" alt="" width="90" height="40">
+        </a>
+      
+        <div class="col-md-8  ms-5" style="width:700px ;" >
+      
+          <div class="input-group mt-1  " style="padding-left: 200px;">
+              
+            <input type="text" class="form-control  " style="border-top-left-radius:20px ;border-bottom-left-radius:20px ;" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping">
+            <span class="input-group-text  " style="border-top-right-radius:20px ;border-bottom-right-radius:20px ;" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span> 
+            <span class=" ms-4 mt-2" ><i class="fa-solid fa-microphone "></i></span> 
+        
+        
+        </div>
+        
+        
+        
+        
+        </div>
+        
+        <div  class="col-md-4 me-2" style="margin-left: -60px;" >
+        <span><i class="fa-solid fa-video mt-3 " style="padding-left: 250px;"></i></span>
+        <button id="personal2" type="button" class="btn text-dark position-relative">
+          <i  class="fa-solid fa-bell mb-2 ms-2"></i>
+          <span  class="position-absolute  mt-2  start-100 translate-middle badge rounded-pill bg-danger">
+            9+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+        <img id="personal" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" width="40px" style="border-radius: 30px; height: 40px;"  class="img-fluid" alt="...">
+        
+        </div>
+      </div>
+    
+      
+
+    </div>
+  
+  </nav>
+
+
+
+
+
+
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" style="width:250px ;" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+ 
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <img   class="me-5" src="youtube-logo-png-transparent-image-5-removebg-preview.png" alt="" width="120" height="40">
+    </div>
+    
+    <div class="offcanvas-body">
+      <div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#"><span><i class="fa-solid fa-house" style="color: black;"></i></span> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span><img width="20px" src="https://static.wikia.nocookie.net/logopedia/images/4/4e/YouTube_Shorts_%28Outline%29.svg/revision/latest/scale-to-width-down/250?cb=20221201213331" alt=""></span> Short</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span><i class="fa-solid fa-photo-film"></i></span> Subscription</a>
+          </li>
+       <hr>
+       <li class="nav-item">
+          <a class="nav-link active text-dark" aria-current="page" href="#"><span><i class="fa-solid fa-clapperboard"></i></span> Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#"><span><i class="fa-solid fa-clock-rotate-left"></i></span> History</a>
+        </li>
+        
+     <hr>
+     <li class="nav-item">
+      <a class="nav-link active text-dark" aria-current="page" href="#">Sign in to like videos, comment, and subscribe.</a>
+    </li>
+    <li class="nav-item text-center">
+    <button type="button" class="btn btn-outline-primary w-50"><span><i class="fa-regular fa-user"></i></span>  Sign in</button>
+  </li>
+  <hr>
+    <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#">Explore</a>
+  
+  </li>
+  
+  <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#"><span><i class="fa-solid fa-fire"></i> </span> Trending</a>
+  
+  </li>
+  <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#"><span><i class="fa-solid fa-music"></i></span> Music</a>
+  
+  </li>
+  <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#"><span><i class="fa-solid fa-gamepad"></i></span> News</a>
+  
+  </li>
+  <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#"><span><i class="fa-solid fa-trophy"></i> </span> sports</a>
+  
+  </li>
+  <hr>
+  <li class="nav-item ">
+      <a class="nav-link active text-dark " aria-current="page" href="#"><span><i class="fa-solid fa-square-plus"></i></span> Browse</a>
+  
+  </li>
+        </ul>
+      </div>
+    
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<br><br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-1    rounded ">
+
+  <ul class="nav flex-column ">
+    <br>
+    <li class="nav-item ">
+      <a class="nav-link active text-dark me-5 " style="font-size: 15px;" aria-current="page" href="#"><span><i class="fa-solid fa-house ms-2" style="color: black;"></i></span><br> Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="#" style="font-size: 15px;"><span class="ms-2"><img width="20px" src="https://static.wikia.nocookie.net/logopedia/images/4/4e/YouTube_Shorts_%28Outline%29.svg/revision/latest/scale-to-width-down/250?cb=20221201213331" alt=""></span> <br> Short</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" style="margin-left:-20px;font-size: 15px;" href="#"><span><i class="fa-solid fa-photo-film ms-4"></i></span><br>  Subscription</a>
+    </li>
+
+ <li class="nav-item">
+    <a class="nav-link active text-dark" aria-current="page" style="margin-left:-7px;font-size: 15px;" href="#"><span><i class="fa-solid fa-clapperboard ms-3"></i></span><br> Library</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark " style="margin-left:-7px ; font-size: 15px;" href="#"><span><i class="fa-solid fa-clock-rotate-left ms-3"></i></span><br> History</a>
+  </li>
+  </ul>
+
+
+</div>
+
+<div class="col-md-11 ">
+  <br>
+  <button type="button" class="btn btn-outline-secondary me-2 active">All</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Live</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Gaming</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Music</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Movies</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Dance</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Sports</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Tech&Programmin</button>
+  <button type="button" class="btn btn-outline-secondary me-2">Pakistani Daramas</button>
+  <button type="button" class="btn btn-outline-secondary  ">Bollywood</button>
+  <button type="button" class="btn btn-outline-secondary  ">Tollywood</button>
+<span><i class="fa-solid fa-chevron-right "></i></span>
+
+
+
+
+  <br><br>
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/VFeigti6Lw8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFEoQzAP&rs=AOn4CLAgV2mLDWR9E_rvAt6bTJ5eJiAzSA" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >New Song Arabic</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/27u9SCBIdVA/hq720_live.jpg?sqp=CMT5-p4G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuYDsiEbjF2Sib_dilyDkPI8el1Q" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >BabaOP is Live</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/TDD6CWdtPGM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvVqRqXXAmJueN6aw3wHv4KydMtA" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >INSANE [*BASS BOOSTED*]</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/iPqAPl4a2lQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkAuomcg5qQ_zwWvUtnp9WP7KOWA" class="figure-img img-fluid" alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >𝐊𝐨𝐬𝐡𝐤𝐢𝐢 𝐱𝐚𝐦 - 𝐒𝐚𝐝c</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/VFeigti6Lw8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFEoQzAP&rs=AOn4CLAgV2mLDWR9E_rvAt6bTJ5eJiAzSA" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >New Song Arabic</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/27u9SCBIdVA/hq720_live.jpg?sqp=CMT5-p4G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuYDsiEbjF2Sib_dilyDkPI8el1Q" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >BabaOP is Live</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/TDD6CWdtPGM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvVqRqXXAmJueN6aw3wHv4KydMtA" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >INSANE [*BASS BOOSTED*]</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+  <figure class="figure">
+    <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/iPqAPl4a2lQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkAuomcg5qQ_zwWvUtnp9WP7KOWA" class="figure-img img-fluid " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >𝐊𝐨𝐬𝐡𝐤𝐢𝐢 𝐱𝐚𝐦 - 𝐒𝐚𝐝c</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+<br><br>
+
+
+
+<div class="row">
+<div class="col-md-12" style="border-top:3px solid rgb(219, 219, 219);border-bottom:3px solid rgb(219, 219, 219) ;">
+  <img width="150px" style="margin-left:-25px ;" src="https://fdn.gsmarena.com/imgroot/news/21/03/youtube-shorts-us-rollout/-1220x526/gsmarena_001.jpg" alt="">
+  <br>
+  
+  <figure class="figure ms-2 mt-2">
+    <img  height="370px" width="200px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/3uO6tAaD1mM/hq720_2.jpg?sqp=-oaymwEdCJwEENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDQLVjmwK9SBlv4wzyqQyNaGVRoHg" class=" " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >Joun Elia Best Poetry</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+  <figure class="figure ms-2 mt-2">
+    <img  height="370px" width="200px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/wbVRwhXG_Ho/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLCuEl6elkgy73UMNdEa6V1ok5PzuQ" class=" " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >Mentioned Someone</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+
+  <figure class="figure ms-2 mt-2">
+    <img  height="370px" width="200px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/6TSzvvq7cMI/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLDW4FWSUkp3K0-p_7VOVO3QIO8wew" class=" " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >Fans Gussa Hai</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+
+  
+  <figure class="figure ms-2 mt-2">
+    <img  height="370px" width="200px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/SS8BCcNnmf0/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBNBcByBU_frLVSN9jIXFQeEzPghg" class=" " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >Dolat ko apne kabo me</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+  <figure class="figure ms-2 mt-2">
+    <img  height="370px" width="200px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/latP-uP8JrE/hq720.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLC2gv0BksvGn7lTEkG9UHzjuQ_i7g" class=" " alt="...">
+    <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+    <figcaption class="ms-5 "  style="margin-top: -30px;" >Accedient Hugya</figcaption>
+    
+    <figcaption class="text-muted ms-5">3M Views</figcaption>
+  </figure>
+ 
+</div>
+</div>  
+
+<div class="row">
+  <div class="col-md-12">
+    <br>
+   <a href="" class="text-dark fs-3" style="text-decoration:none;"> <i class="fa-solid fa-fire text-danger "></i> </span> Trending</a>
+  <br>
+<figure class="figure">
+  <br>
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/VFeigti6Lw8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFEoQzAP&rs=AOn4CLAgV2mLDWR9E_rvAt6bTJ5eJiAzSA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >New Song Arabic</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/27u9SCBIdVA/hq720_live.jpg?sqp=CMT5-p4G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuYDsiEbjF2Sib_dilyDkPI8el1Q" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >BabaOP is Live</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+
+
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/TDD6CWdtPGM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvVqRqXXAmJueN6aw3wHv4KydMtA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >INSANE [*BASS BOOSTED*]</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/iPqAPl4a2lQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkAuomcg5qQ_zwWvUtnp9WP7KOWA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >𝐊𝐨𝐬𝐡𝐤𝐢𝐢 𝐱𝐚𝐦 - 𝐒𝐚𝐝c</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+
+
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/VFeigti6Lw8/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFEoQzAP&rs=AOn4CLAgV2mLDWR9E_rvAt6bTJ5eJiAzSA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >New Song Arabic</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/27u9SCBIdVA/hq720_live.jpg?sqp=CMT5-p4G-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuYDsiEbjF2Sib_dilyDkPI8el1Q" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >BabaOP is Live</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+
+
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/TDD6CWdtPGM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvVqRqXXAmJueN6aw3wHv4KydMtA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >INSANE [*BASS BOOSTED*]</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+
+<figure class="figure">
+  <img width="270px" style="border-radius: 20px;" src="https://i.ytimg.com/vi/iPqAPl4a2lQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBkAuomcg5qQ_zwWvUtnp9WP7KOWA" class="figure-img img-fluid " alt="...">
+  <br><img height="30px" width="30px" src="3acb0088-d3c9-44bd-8a7a-14c34648dddf.png" class="rounded-circle " alt="...">
+  <figcaption class="ms-5 "  style="margin-top: -30px;" >𝐊𝐨𝐬𝐡𝐤𝐢𝐢 𝐱𝐚𝐦 - 𝐒𝐚𝐝c</figcaption>
+  
+  <figcaption class="text-muted ms-5">3M Views</figcaption>
+</figure>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
